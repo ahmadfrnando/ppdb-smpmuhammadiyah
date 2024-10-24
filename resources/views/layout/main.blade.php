@@ -137,7 +137,6 @@
                         <ul>
                             <li><a href="index.php?page=pendaftaran"> Form Pendaftaran </a></li>
                             <li><a href="index.php?page=syaratpendaftaran"> Syarat Pendaftaran </a></li>
-                            <li><a href="index.php?page=pembayaran"> Pembayaran </a></li>
                         </ul>
                     </aside>
                 </div>
