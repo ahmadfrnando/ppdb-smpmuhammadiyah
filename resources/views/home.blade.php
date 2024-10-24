@@ -386,7 +386,7 @@
                     <h3> Penerimaan Peserta Didik Baru & Murid Pindahan Tahun Ajaran 2025/2026 </h3>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-4">
-                    <a href="{{ route('siswa.store') }}"> klik link pendaftaran </a>
+                    <a href="{{ route('form-pendaftaran') }}"> klik link pendaftaran </a>
                 </div>
             </div>
         </div>
