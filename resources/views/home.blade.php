@@ -169,8 +169,8 @@
                             sebagai
                             berikut : </p>
                     </div>
-                    <a class="left carousel-control" href="#team-carousel" role="button" data-slide="prev"> Prev </a>
-                    <a class="right carousel-control" href="#team-carousel" role="button" data-slide="next"> Next </a>
+                    <a class="right carousel-control" href="#team-carousel" role="button" data-slide="prev"> Prev </a>
+                    <a class="left carousel-control" href="#team-carousel" role="button" data-slide="next"> Next </a>
                 </div>
                 <div class="col-md-6 col-sm-12 team-gallary">
                     <div id="team-carousel" class="carousel slide" data-ride="carousel">
