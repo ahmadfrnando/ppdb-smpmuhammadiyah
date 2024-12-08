@@ -7,6 +7,7 @@ use App\Filament\Resources\PengumumanResource\RelationManagers;
 use App\Models\Pengumuman;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\TimePicker;
 use Filament\Forms\Form;
@@ -36,6 +37,7 @@ class PengumumanResource extends Resource
                         ->hiddenOn('edit')
                         ->imageResizeMode('cover')
                         ->maxSize(1024),
+                    Textarea::make('deskripsi'),
                 ]);
         }
 

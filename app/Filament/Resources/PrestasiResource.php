@@ -9,6 +9,7 @@ use Faker\Core\File;
 use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -37,6 +38,7 @@ class PrestasiResource extends Resource
                     ->image()
                     ->imageResizeMode('cover')
                     ->maxSize(1024),
+                Textarea::make('deskripsi'),
             ]);
     }
 

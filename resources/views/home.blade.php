@@ -8,7 +8,7 @@
         <div id="home-slider2" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="images/slider1.jpeg" alt="slider1" width="1920" height="801" />
+                    <img src="images/slider3.png" alt="slider1" width="1920" height="801" />
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="col-md-6 col-sm-8 col-xs-8 ow-pull-right no-padding">
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                <!-- <div class="item">
                     <img src="images/guru.jpeg" alt="slider2" width="1500" height="500" />
                     <div class="carousel-caption">
                         <div class="container">
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <a class="left carousel-control" href="#home-slider2" role="button" data-slide="prev">
                 <i class="fa fa-angle-left"></i>

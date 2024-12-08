@@ -22,6 +22,52 @@
     <link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/shortcode.css">
+
+    <style>
+        .event-box {
+            /* border: 1px solid #ddd; */
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .eventcontent-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .event-description {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 10px;
+            overflow: hidden;
+            /* Pastikan deskripsi tidak melebihi batas */
+            text-overflow: ellipsis;
+        }
+
+        .full-description {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        .read-more-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .read-more-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
@@ -175,6 +221,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/scripts.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="libraries/lib.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
