@@ -3,39 +3,85 @@
 @section('title', 'Home')
 
 @section('content')
+<style>
+.photoslider-section {
+    position: relative;
+}
 
+.carousel-inner {
+    position: relative;
+    overflow: hidden; /* Untuk menghindari elemen meluas keluar slider */
+}
+
+.carousel img.slider-img {
+    width: 100%; /* Gambar selalu menyesuaikan lebar kontainer */
+    height: auto; /* Menjaga aspek rasio gambar */
+    max-height: 90vh; /* Membatasi tinggi maksimum slider agar tidak terlalu besar */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 60%;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+}
+
+</style>
     <div class="photoslider-section photoslider2 container-fluid no-padding">
-        <div id="home-slider2" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="images/slider3.png" alt="slider1" width="1920" height="801" />
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="col-md-6 col-sm-8 col-xs-8 ow-pull-right no-padding">
-                                <h3 data-animation="animated bounceInLeft"> Selamat Datang </h3>
-                                <h3 data-animation="animated fadeInDown"><span> SMP Muhammadiyah 4 Medan </span></h3>
+    <div id="home-slider2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/slider3.png" alt="slider3" class="slider-img" />
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-8 col-xs-12 text-right no-padding">
+                                <h3 data-animation="animated bounceInLeft">Selamat Datang</h3>
+                                <h3 data-animation="animated fadeInDown"><span>SMP Muhammadiyah 4 Medan</span></h3>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="item">
-                    <img src="images/guru.jpeg" alt="slider2" width="1500" height="500" />
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="col-md-6 col-sm-8 col-xs-8 ow-pull-left no-padding">
+            </div>
+            <div class="item">
+                <img src="images/guru.jpeg" alt="slider2" class="slider-img" />
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-8 col-xs-12 text-left no-padding">
+                                <!-- Tambahkan teks atau elemen lain di sini jika diperlukan -->
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
-            <a class="left carousel-control" href="#home-slider2" role="button" data-slide="prev">
-                <i class="fa fa-angle-left"></i>
-            </a>
-            <a class="right carousel-control" href="#home-slider2" role="button" data-slide="next">
-                <i class="fa fa-angle-right"></i>
-            </a>
         </div>
+        <a class="left carousel-control" href="#home-slider2" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="right carousel-control" href="#home-slider2" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+        </a>
     </div>
+</div>
+
 
     <div class="container eventblock">
         <div class="section-padding"></div>
