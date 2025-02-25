@@ -10,9 +10,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 })->name('home');
-Route::get('/form-pendaftaran', function () {
-    return view('form-pendaftaran');
-})->name('form-pendaftaran');
+Route::get('/form-pendaftaran', [SiswaController::class, 'index'])->name('form-pendaftaran');
 Route::get('/syarat-pendaftaran', function () {
     return view('syarat-pendaftaran');
 })->name('syarat-pendaftaran');

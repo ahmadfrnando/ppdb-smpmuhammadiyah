@@ -19,10 +19,10 @@
     <div class="col-md-7 col-sm-12">
         <div class="event-section event2-section">
             <div class="event-block">
-                @foreach ($data as $prestasi)
+                @foreach ($data as $key => $prestasi)
                 <div class="event-box">
                     <div class="eventcontent-box">
-                        <span class="event-index"> 0{{ $loop->iteration }} </span>
+                        <span class="event-index"> 0{{ $data->firstItem() + $key }} </span>
                         <h3><a href="#"> {{ $prestasi->nama_prestasi}} </a></h3>
                         <div class="event-meta">
                             <span><i aria-hidden="true" class="fa fa-calendar-o"></i> {{ $prestasi->tanggal_prestasi }} </span>
@@ -39,7 +39,7 @@
                             {{ $prestasi->deskripsi }} <!-- Tampilkan deskripsi lengkap -->
                         </div>
 
-                        <button class="read-more-btn">Read More</button>
+                        <button class="read-more-btn">Baca Selengkapnya</button>
                     </div>
                     <img src="{{ '/storage/' . $prestasi->foto_prestasi ?? '' }}" alt="{{ $prestasi->nama_prestasi }}" width="200" height="130" />
                 </div>

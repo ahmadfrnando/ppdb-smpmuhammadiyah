@@ -21,10 +21,10 @@
     <div class="col-md-7 col-sm-12">
         <div class="event-section event2-section">
             <div class="event-block">
-                @foreach ($data as $pengumuman)
+                @foreach ($data as $key => $pengumuman)
                 <div class="event-box">
                     <div class="eventcontent-box">
-                        <span class="event-index"> 0{{ $loop->iteration }} </span>
+                        <span class="event-index"> 0{{ $data->firstItem() + $key }} </span>
                         <h3><a href="#"> {{ $pengumuman->judul }} </a></h3>
                         <div class="event-meta">
                             <span><i aria-hidden="true" class="fa fa-map-marker"></i> SMP Muhammadiyah 4 Medan </span>
@@ -43,7 +43,7 @@
                             {{ $pengumuman->deskripsi }} <!-- Tampilkan deskripsi lengkap -->
                         </div>
 
-                        <button class="read-more-btn">Read More</button>
+                        <button class="read-more-btn">Baca Selengkapnya</button>
                     </div>
                     <img src="{{ '/storage/' . $pengumuman->foto }}" alt="{{ $pengumuman->judul }}" width="200" height="130" />
                 </div>

@@ -2,12 +2,29 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\PembukaanPendaftaran;
 use App\Models\Siswa;
 use Barryvdh\DomPDF\Facade\Pdf;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class SiswaController extends Controller
-{
+{   
+
+    public function index()
+    {
+        $cekTanggal = PembukaanPendaftaran::latest()->first();
+        $tanggalHariIni = Carbon::now();
+
+        if($cekTanggal->tanggal_buka <= $tanggalHariIni && $cekTanggal->tanggal_tutup >= $tanggalHariIni){
+            return view('form-pendaftaran');
+        }else{
+            return view('tutup-pendaftaran', [
+                'tanggal_tutup' => $cekTanggal->tanggal_tutup
+            ]);
+        }
+    }
+
     public function store(Request $request)
     {
         // dd($request->all());

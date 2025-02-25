@@ -123,7 +123,7 @@
                                     </li>
                                     <li class="dropdown">
                                         <a aria-expanded="false" aria-haspopup="true" role="button"
-                                            class="dropdown-toggle"> PPDB </a>
+                                            class="dropdown-toggle"> Pendaftaran </a>
                                         <i class="ddl-switch fa fa-angle-down"></i>
                                         <ul class="dropdown-menu">
                                             <li><a href="{{ route('form-pendaftaran') }}"> Form Pendaftaran </a></li>
